@@ -9,9 +9,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $message .= "Message: " . $_POST["message"];
 
     if (mail($to, $subject, $message, $headers)) {
-        echo "Message sent successfully!";
+        alert( "Message sent successfully!");
     } else {
-        echo "Error sending message.";
+        alert( "Error sending message.");
     }
 }
 ?>
